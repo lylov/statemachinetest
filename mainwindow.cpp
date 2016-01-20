@@ -14,8 +14,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-#include <QState>
+//#include <QState>
 
 void MainWindow::initStateMachine()
 {
