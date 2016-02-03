@@ -1,0 +1,10 @@
+*.exe
+debug
+win32
+GeneratedFiles
+*.ncb
+*.sln
+*.suo
+*.vcproj
+*.user
+*.exe

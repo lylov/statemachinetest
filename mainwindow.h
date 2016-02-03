@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QStateMachine>
+#include <QPushButton>
+#include <QLabel>
 
 namespace Ui {
 class MainWindow;
@@ -21,8 +23,10 @@ private:
 
 private:
     void initStateMachine();
+	void initRegimStateMachine(QState *stopState, QPushButton *startBttn, QPushButton *nextBttn, QPushButton *stopBttn, QLabel* label);
+
 private:
-    QStateMachine* m_machine;
+    QStateMachine *m_machine;
 };
 
 #endif // MAINWINDOW_H
