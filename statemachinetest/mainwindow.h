@@ -1,19 +1,32 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QtGui/QMainWindow>
-#include "ui_mainwindow.h"
+#include <QMainWindow>
+#include <QStateMachine>
+#include <QPushButton>
+#include <QLabel>
 
-class mainwindow : public QMainWindow
+namespace Ui {
+class MainWindow;
+}
+
+class MainWindow : public QMainWindow
 {
-	Q_OBJECT
-
+    Q_OBJECT
+    
 public:
-	mainwindow(QWidget *parent = 0, Qt::WFlags flags = 0);
-	~mainwindow();
+    explicit MainWindow(QWidget *parent = 0);
+    ~MainWindow();
+    
+private:
+    Ui::MainWindow *ui;
 
 private:
-	Ui::mainwindowClass ui;
+    void initStateMachine();
+	void initRegimStateMachine(QState *stopState, QPushButton *startBttn, QPushButton *nextBttn, QPushButton *stopBttn, QLabel* label);
+
+private:
+    QStateMachine *m_machine;
 };
 
 #endif // MAINWINDOW_H
