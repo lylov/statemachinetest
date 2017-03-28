@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>285</width>
-    <height>285</height>
+    <width>296</width>
+    <height>345</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -39,6 +39,13 @@
         <widget class="QPushButton" name="pushButtonNextStateR1">
          <property name="text">
           <string>Next state</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="pushButtonPauseR1">
+         <property name="text">
+          <string>Pause</string>
          </property>
         </widget>
        </item>
@@ -86,6 +93,13 @@
          </property>
         </widget>
        </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="pushButtonPauseR2">
+         <property name="text">
+          <string>Pause</string>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
     </item>
@@ -96,7 +110,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>285</width>
+     <width>296</width>
      <height>21</height>
     </rect>
    </property>
